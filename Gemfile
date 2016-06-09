@@ -29,6 +29,7 @@ gem 'jbuilder', '2.5.0'
 # gem 'capistrano-rails', group: :development
 
 gem 'bower-rails', '0.10.0'
+gem "foreman", '0.82.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,6 +52,8 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.3'
+  gem "rails_stdout_logging", '0.0.5'
+  gem "rails_serve_static_assets", '0.0.5'
   # gem 'unicorn', '5.1.0'
   # gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   # gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
